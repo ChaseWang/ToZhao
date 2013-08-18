@@ -60,6 +60,14 @@
 		933910DF17BFC91F00CB477F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 933910D517BFC91F00CB477F /* Reachability.m */; };
 		933910EC17BFCAF700CB477F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933910EA17BFCAEA00CB477F /* QuartzCore.framework */; };
 		933910F117BFCB7900CB477F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933910EF17BFCB6700CB477F /* ImageIO.framework */; };
+		933910F517C0AC8E00CB477F /* LTLetterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 933910F417C0AC8E00CB477F /* LTLetterObject.m */; };
+		9339111717C0BFB300CB477F /* LTNewLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9339111017C0BFB300CB477F /* LTNewLetterViewController.m */; };
+		9339111817C0BFB300CB477F /* LTPublicLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9339111217C0BFB300CB477F /* LTPublicLetterViewController.m */; };
+		9339111917C0BFB300CB477F /* LTReceiveLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9339111417C0BFB300CB477F /* LTReceiveLetterViewController.m */; };
+		9339111A17C0BFB300CB477F /* LTSendLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9339111617C0BFB300CB477F /* LTSendLetterViewController.m */; };
+		9339111D17C0C00700CB477F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9339111B17C0C00700CB477F /* Model.xcdatamodeld */; };
+		9339112517C0C01E00CB477F /* _LetterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9339112117C0C01E00CB477F /* _LetterEntity.m */; };
+		9339112617C0C01E00CB477F /* LetterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9339112417C0C01E00CB477F /* LetterEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +169,21 @@
 		933910EA17BFCAEA00CB477F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		933910ED17BFCB4300CB477F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		933910EF17BFCB6700CB477F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		933910F317C0AC8E00CB477F /* LTLetterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLetterObject.h; sourceTree = "<group>"; };
+		933910F417C0AC8E00CB477F /* LTLetterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLetterObject.m; sourceTree = "<group>"; };
+		9339110F17C0BFB300CB477F /* LTNewLetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTNewLetterViewController.h; path = ViewController/LTNewLetterViewController.h; sourceTree = "<group>"; };
+		9339111017C0BFB300CB477F /* LTNewLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTNewLetterViewController.m; path = ViewController/LTNewLetterViewController.m; sourceTree = "<group>"; };
+		9339111117C0BFB300CB477F /* LTPublicLetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTPublicLetterViewController.h; path = ViewController/LTPublicLetterViewController.h; sourceTree = "<group>"; };
+		9339111217C0BFB300CB477F /* LTPublicLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTPublicLetterViewController.m; path = ViewController/LTPublicLetterViewController.m; sourceTree = "<group>"; };
+		9339111317C0BFB300CB477F /* LTReceiveLetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTReceiveLetterViewController.h; path = ViewController/LTReceiveLetterViewController.h; sourceTree = "<group>"; };
+		9339111417C0BFB300CB477F /* LTReceiveLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTReceiveLetterViewController.m; path = ViewController/LTReceiveLetterViewController.m; sourceTree = "<group>"; };
+		9339111517C0BFB300CB477F /* LTSendLetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTSendLetterViewController.h; path = ViewController/LTSendLetterViewController.h; sourceTree = "<group>"; };
+		9339111617C0BFB300CB477F /* LTSendLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTSendLetterViewController.m; path = ViewController/LTSendLetterViewController.m; sourceTree = "<group>"; };
+		9339111C17C0C00700CB477F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9339112017C0C01E00CB477F /* _LetterEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LetterEntity.h; sourceTree = "<group>"; };
+		9339112117C0C01E00CB477F /* _LetterEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _LetterEntity.m; sourceTree = "<group>"; };
+		9339112317C0C01E00CB477F /* LetterEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetterEntity.h; sourceTree = "<group>"; };
+		9339112417C0C01E00CB477F /* LetterEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +243,8 @@
 		93390F8017BFC08000CB477F /* Letter */ = {
 			isa = PBXGroup;
 			children = (
+				933910F617C0B25B00CB477F /* ViewController */,
+				933910F217BFCC0E00CB477F /* NetWorkService */,
 				93390F9F17BFC20400CB477F /* Persistence */,
 				93390F9E17BFC1EE00CB477F /* Object */,
 				93390F9D17BFC1C700CB477F /* ToolBox */,
@@ -259,6 +284,8 @@
 		93390F9E17BFC1EE00CB477F /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				933910F317C0AC8E00CB477F /* LTLetterObject.h */,
+				933910F417C0AC8E00CB477F /* LTLetterObject.m */,
 			);
 			name = Object;
 			sourceTree = "<group>";
@@ -266,6 +293,8 @@
 		93390F9F17BFC20400CB477F /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				9339111E17C0C01E00CB477F /* Entities */,
+				9339111B17C0C00700CB477F /* Model.xcdatamodeld */,
 			);
 			name = Persistence;
 			sourceTree = "<group>";
@@ -415,6 +444,56 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		933910F217BFCC0E00CB477F /* NetWorkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetWorkService;
+			sourceTree = "<group>";
+		};
+		933910F617C0B25B00CB477F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9339110F17C0BFB300CB477F /* LTNewLetterViewController.h */,
+				9339111017C0BFB300CB477F /* LTNewLetterViewController.m */,
+				9339111117C0BFB300CB477F /* LTPublicLetterViewController.h */,
+				9339111217C0BFB300CB477F /* LTPublicLetterViewController.m */,
+				9339111317C0BFB300CB477F /* LTReceiveLetterViewController.h */,
+				9339111417C0BFB300CB477F /* LTReceiveLetterViewController.m */,
+				9339111517C0BFB300CB477F /* LTSendLetterViewController.h */,
+				9339111617C0BFB300CB477F /* LTSendLetterViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		9339111E17C0C01E00CB477F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9339111F17C0C01E00CB477F /* attribute */,
+				9339112217C0C01E00CB477F /* implementation */,
+			);
+			name = Entities;
+			path = Persistence/Entities;
+			sourceTree = "<group>";
+		};
+		9339111F17C0C01E00CB477F /* attribute */ = {
+			isa = PBXGroup;
+			children = (
+				9339112017C0C01E00CB477F /* _LetterEntity.h */,
+				9339112117C0C01E00CB477F /* _LetterEntity.m */,
+			);
+			path = attribute;
+			sourceTree = "<group>";
+		};
+		9339112217C0C01E00CB477F /* implementation */ = {
+			isa = PBXGroup;
+			children = (
+				9339112317C0C01E00CB477F /* LetterEntity.h */,
+				9339112417C0C01E00CB477F /* LetterEntity.m */,
+			);
+			path = implementation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,6 +504,7 @@
 				93390F7317BFC08000CB477F /* Sources */,
 				93390F7417BFC08000CB477F /* Frameworks */,
 				93390F7517BFC08000CB477F /* Resources */,
+				9339110E17C0BE5F00CB477F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -477,6 +557,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9339110E17C0BE5F00CB477F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd Letter\nmogenerator -m Persistence/Model.xcdatamodeld/Model.xcdatamodel --machine-dir Persistence/Entities/attribute --human-dir Persistence/Entities/implementation --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93390F7317BFC08000CB477F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -521,6 +617,14 @@
 				933910DD17BFC91F00CB477F /* MKNetworkEngine.m in Sources */,
 				933910DE17BFC91F00CB477F /* MKNetworkOperation.m in Sources */,
 				933910DF17BFC91F00CB477F /* Reachability.m in Sources */,
+				933910F517C0AC8E00CB477F /* LTLetterObject.m in Sources */,
+				9339111717C0BFB300CB477F /* LTNewLetterViewController.m in Sources */,
+				9339111817C0BFB300CB477F /* LTPublicLetterViewController.m in Sources */,
+				9339111917C0BFB300CB477F /* LTReceiveLetterViewController.m in Sources */,
+				9339111A17C0BFB300CB477F /* LTSendLetterViewController.m in Sources */,
+				9339111D17C0C00700CB477F /* Model.xcdatamodeld in Sources */,
+				9339112517C0C01E00CB477F /* _LetterEntity.m in Sources */,
+				9339112617C0C01E00CB477F /* LetterEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +750,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9339111B17C0C00700CB477F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9339111C17C0C00700CB477F /* Model.xcdatamodel */,
+			);
+			currentVersion = 9339111C17C0C00700CB477F /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Persistence/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 93390F6F17BFC08000CB477F /* Project object */;
 }

@@ -1,23 +1,194 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r6d-yA-yco">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller - Letter-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="LTViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-Rk-Cyt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xPp-jn-8PO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="新Letter">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="caU-D7-gEB" kind="push" id="rH4-PZ-BMU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGS-vm-9eZ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="已发送Letter">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hQc-fy-k3L" kind="push" id="kus-vd-Uie"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yu-bE-26c">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="接受的Letter">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="krb-ix-6xO" kind="push" id="00h-lv-0c2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiI-Lq-klB">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="查看公共Letter">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YQn-iV-7Jw" kind="push" id="3oC-C5-Gb0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Yu-bE-26c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4vP-zE-hMY"/>
+                            <constraint firstItem="GbR-Rk-Cyt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="51" id="652-Zi-ZFO"/>
+                            <constraint firstItem="GbR-Rk-Cyt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8Po-Rq-qUM"/>
+                            <constraint firstAttribute="trailing" secondItem="GbR-Rk-Cyt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AvV-II-0k6"/>
+                            <constraint firstAttribute="trailing" secondItem="tiI-Lq-klB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="B89-Rj-sdK"/>
+                            <constraint firstItem="PGS-vm-9eZ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GlP-Ie-MNE"/>
+                            <constraint firstItem="5Yu-bE-26c" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ld3-QT-ikn"/>
+                            <constraint firstAttribute="trailing" secondItem="PGS-vm-9eZ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Um0-EV-10i"/>
+                            <constraint firstItem="tiI-Lq-klB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cCS-7U-2S7"/>
+                            <constraint firstItem="tiI-Lq-klB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="247" id="hwy-IX-7ic"/>
+                            <constraint firstItem="PGS-vm-9eZ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="118" id="pKE-sk-hsZ"/>
+                            <constraint firstItem="5Yu-bE-26c" firstAttribute="top" secondItem="3" secondAttribute="top" constant="183" id="rqB-PF-pls"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Letter" id="eEQ-ik-P3S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="639" y="71"/>
+        </scene>
+        <!--New Letter View Controller - new letter-->
+        <scene sceneID="986-Cj-IvQ">
+            <objects>
+                <viewController id="caU-D7-gEB" customClass="LTNewLetterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LLM-SI-MY5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="new letter" id="oKf-bL-ApC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkk-0a-MDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="-1007"/>
+        </scene>
+        <!--Public Letter View Controller - public letter-->
+        <scene sceneID="L39-gV-8dZ">
+            <objects>
+                <viewController id="YQn-iV-7Jw" customClass="LTPublicLetterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BW5-nC-ByW">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="public letter" id="aaG-s7-5gs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJM-fJ-Nzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="1035"/>
+        </scene>
+        <!--Receive Letter View Controller - receive letter-->
+        <scene sceneID="YiL-Um-u45">
+            <objects>
+                <viewController id="krb-ix-6xO" customClass="LTReceiveLetterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="79o-42-uyW">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="receive letter" id="1cS-XG-CDs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWf-Yj-Owi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="355"/>
+        </scene>
+        <!--Send Letter View Controller - send letter-->
+        <scene sceneID="EXr-th-qdO">
+            <objects>
+                <viewController id="hQc-fy-k3L" customClass="LTSendLetterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYe-cx-baG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="send letter" id="QcN-ve-XQc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cA-FI-zeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="-305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uAt-Hi-gib">
+            <objects>
+                <navigationController id="r6d-yA-yco" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eDw-3u-U0c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Ubt-FJ-nhg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmg-bK-TUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="71"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="LTNewLetterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LTNewLetterViewController.h"/>
+        </class>
+        <class className="LTPublicLetterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LTPublicLetterViewController.h"/>
+        </class>
+        <class className="LTReceiveLetterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LTReceiveLetterViewController.h"/>
+        </class>
+        <class className="LTSendLetterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LTSendLetterViewController.h"/>
+        </class>
+        <class className="LTViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LTViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
